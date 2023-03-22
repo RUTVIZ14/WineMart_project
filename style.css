@@ -1,0 +1,35 @@
+h1{  background-image: url(w.jpg); background-size: 20ex;
+    font-size: 60px;
+    color: rgb(222, 234, 49) ;
+}
+
+a{
+    color: antiquewhite; 
+}
+
+
+nav a {font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+    background-color: #333;
+
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width:auto;
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid steelblue;
+    box-shadow: 0 10px 20px 10px;
+    }
