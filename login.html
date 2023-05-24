@@ -8,22 +8,49 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <form action="home.html">
-    <div class="bigimg">
-    <header>
-        <h1>WINE MART</h1> 
-        <h3>Log-in/Sign-up!</h3>
-    </header>
+    
+        <div class="bigimg">
+            <header>
+                <h1>WINE MART</h1> 
+                <h3>Log-in/Sign-up!</h3>
+            </header>
 
-    <main>
-          <h2>LOGIN</h2>
-        <p>UserId/Number: <input type="text" name="login" id="login_id" placeholder="Email/Phone Number" required ></p>
-        <p class="pass">Password: <input type="password" name="password" id="password" placeholder="enter your password" required ></p>
-         <div class="loginbuttton" align="center"><input type="submit" value="LOGIN"> </div>
-         <div class="signupbutton" align="center"><button><a href="sign_up.html">SIGNUP</a></button></div>
+            <main>
+                <h2>LOGIN</h2>
+                <form id="loginForm" action="home.html"></form>
+                <p>UserId/Number: <input type="text" name="login" id="login_id" placeholder="Email/Phone Number"></p>
+                <p class="pass">Password: <input type="password" name="password" id="password" placeholder="Enter your password"></p>
+                <div class="loginbuttton" align="center"><input type="submit" value="LOGIN"></div>
+            </form>
+            <div class="signupbutton" align="center"><button id="signupButton">SIGNUP</button></div>
 
-    </main>
-    </div>
-</form>
+            </main>  
+
+        
+        
+        </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $('#login_id').mousemove(function() {
+                showAlert('Enter Your UserID');
+            });
+
+            
+
+            
+            $('#signupButton').click(function() {
+                
+                window.location.href = 'sign_up.html';
+            });
+        });
+
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
 </body>
 </html>
